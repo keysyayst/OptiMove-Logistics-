@@ -13,7 +13,7 @@ use OptiMove\Logistics\Services\InternationalShipment;
 
 echo "=== LAYANAN PENGIRIMAN EKSPRES ===\n\n";
 
-$express = new ExpressShipment("OPT-EXP-001", "John Doe", 100000, "Same Day");
+$express = new ExpressShipment("OPT-EXP-001", "Syanti", 100000, "Same Day");
 
 echo $express->getExpressInfo() . "\n";
 echo $express->getEstimatedDelivery() . "\n";
@@ -25,7 +25,7 @@ echo "=== LAYANAN PENGIRIMAN INTERNASIONAL ===\n\n";
 
 $international = new InternationalShipment(
     "OPT-INT-001", 
-    "Jane Smith", 
+    "Falsya", 
     500000, 
     "Singapore", 
     150000

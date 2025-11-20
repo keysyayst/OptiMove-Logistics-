@@ -24,7 +24,7 @@ class ExpressShipment extends Shipment {
     }
     
     public function getTotalCostWithExpress() {
-        $baseCost = $this->calculateTotalCost(); // Memanggil method protected dari parent
+        $baseCost = $this->calculateTotalCost();
         $expressFee = ($this->expressType === "Same Day") ? 50000 : 25000;
         return $baseCost + $expressFee;
     }
